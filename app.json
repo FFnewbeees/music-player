@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5d896725-2425-4e32-953c-56c077ee8962"
+      }
+    },
+    "owner": "victorliu1999"
   }
 }
