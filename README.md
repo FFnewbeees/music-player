@@ -20,7 +20,7 @@ search for an artist by name.
 without the song stopping.
 - [ ] When a new search is performed, you can leave any playing songs as
 is, or you can stop the playing song.
-- [ ] Layout should be fixed to portrait
+- [X] Layout should be fixed to portrait
 
 ## Getting Started
 
