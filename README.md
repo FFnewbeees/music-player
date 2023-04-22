@@ -8,8 +8,8 @@
 search for an artist by name.
 
 ## TODO
-- [ ] Each song’s title, artist, album and album art should be displayed.
-- [ ] Initially load only 25 songs at most.
+- [X] Each song’s title, artist, album and album art should be displayed.
+- [X] Initially load only 25 songs at most.
 - [ ] When we tap a song for the first time, a media player should show up at the bottom of the screen and optionally you can start to play the preview for that song.
 - [ ] The media player may be something as simple as a toggling play or pause button, however, the media controls should be on top of the songs list, and the background of the media controls should blur the songs list behind it. It should only show when a song is playing. All the other controls shown are optional.
 - [ ] For each subsequent song selected, do not play the song automatically.
