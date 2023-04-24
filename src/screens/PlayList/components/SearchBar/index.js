@@ -1,11 +1,15 @@
-import {  Text, View } from 'react-native';
+import {  Text, View, TextInput } from 'react-native';
 import { styles } from './index.css';
  
-export default function SearchBar() {
+export default function SearchBar({onChange, searchString}) {
+
   return (
-    <View style={styles.container}>
-      <Text>Search Bar is here</Text>
-    </View>
+      <TextInput 
+        placeholder="Seach a new song"
+        style={styles.input}
+        onChangeText={onChange}
+        value={searchString}
+      />
   );
 }
 
