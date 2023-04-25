@@ -50,7 +50,7 @@ export default function PlayList() {
     <View style={styles.container}>
       <SearchBar onChange={setSearchString} searchString={searchString}/>
       <FlatList 
-            style={{flex:1,width:'100%'}}
+            style={styles.songList}
             extraData={results}
             onEndReached={fetchMoreSongs}
             onEndReachedThreshold={0.7}
@@ -58,7 +58,6 @@ export default function PlayList() {
             renderItem={({item}) => <Song selectedSong={selectedSong.trackId} data={item} onPress={() => handleSongOnPress(item)} />}
             keyExtractor={item => item.trackId.toString()}
         />
-
       {selectedSong && <SongPlayer selectedSong={selectedSong} />}
     </View>
   );
