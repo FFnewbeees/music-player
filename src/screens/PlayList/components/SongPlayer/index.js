@@ -4,6 +4,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import React, { useState, useEffect } from 'react';
 import { Audio } from 'expo-av';
  
+// Player component
 export default function SongPlayer(props) {
   const {selectedSong} = props
 
@@ -58,9 +59,9 @@ export default function SongPlayer(props) {
   const showPlaying = isPlaying && playingSong.trackId === selectedSong.trackId;
 
   return (
-    <TouchableOpacity style={styles.container} onPress={handleOnPress}>
-      <Ionicons name={showPlaying ? "stop": "play" } size={24} color="black" />
-    </TouchableOpacity>
+      <TouchableOpacity style={styles.container} onPress={handleOnPress}>
+        <Ionicons name={showPlaying ? "stop": "play" } size={24} color="black" />
+      </TouchableOpacity>
   );
 }
 

@@ -9,9 +9,12 @@ export default function PlayList() {
 
   const [searchString, setSearchString] = useState('taylor swift');
   const [data, setData] = useState(false);
-  const [limit, setLimit] = useState(25);
   const [selectedSong, setSelectedSong] = useState(false);
 
+  // Initially load only 25 songs at most.
+  const [limit, setLimit] = useState(25);
+
+  // Use the iTunes Search API to search for an artist by name. 
   const getSongs = async () => {
     let results = fetch(`https://itunes.apple.com/search?term=${searchString}&limit=${limit}&entity=song`)
     .then((response)=>{
@@ -28,6 +31,7 @@ export default function PlayList() {
 
   useEffect(() => {
 
+    // Debounce to avoid frequent actions
     const timer = setTimeout(() => {
       getSongs();
     }, 1000)
@@ -43,7 +47,9 @@ export default function PlayList() {
   }
 
   const fetchMoreSongs = () => {
-     setLimit(limit + 10);
+    // When user scroll to the near bottom of the list,
+    // Load 10 more songs
+    setLimit(limit + 10);
   }
 
   return ( 
@@ -58,6 +64,10 @@ export default function PlayList() {
             renderItem={({item}) => <Song selectedSong={selectedSong.trackId} data={item} onPress={() => handleSongOnPress(item)} />}
             keyExtractor={item => item.trackId.toString()}
         />
+
+      {/* When we tap a song for the first time, a media player should show up
+      at the bottom of the screen and optionally you can start to play the
+      preview for that song. */}
       {selectedSong && <SongPlayer selectedSong={selectedSong} />}
     </View>
   );
