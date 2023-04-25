@@ -15,7 +15,7 @@ search for an artist by name.
 - [X] For each subsequent song selected, do not play the song automatically.
 - [X] When a song is selected which is not playing, a Play button should be displayed, when a song is selected which is playing, a pause button should be displayed.
 - [X] When the play button is clicked, the song should start playing, if there was a song playing in the background, it should stop.
-- [ ] When a song is being played, you must provide some indication in the list item that the song is being played.
+- [X] When a song is being played, you must provide some indication in the list item that the song is being played.
 - [X] When a song is playing, you should be able to navigate away from it without the song stopping.
 - [X] When a new search is performed, you can leave any playing songs as
 is, or you can stop the playing song.
