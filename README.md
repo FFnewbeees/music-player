@@ -7,7 +7,7 @@
 2. Use the iTunes Search API to create a simple music player app that lets you
 search for an artist by name.
 
-## TODO
+## Features
 - [X] Each song’s title, artist, album and album art should be displayed.
 - [X] Initially load only 25 songs at most.
 - [X] When we tap a song for the first time, a media player should show up at the bottom of the screen and optionally you can start to play the preview for that song.
