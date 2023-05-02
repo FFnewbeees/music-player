@@ -1,25 +1,7 @@
-# Music-player
+# Retailer List
 
 ### Built by React Native
 
-## Requirements
-1. Create a simple music player
-2. Use the iTunes Search API to create a simple music player app that lets you
-search for an artist by name.
-
-## Features
-- [X] Each song’s title, artist, album and album art should be displayed.
-- [X] Initially load only 25 songs at most.
-- [X] When we tap a song for the first time, a media player should show up at the bottom of the screen and optionally you can start to play the preview for that song.
-- [X] The media player may be something as simple as a toggling play or pause button, however, the media controls should be on top of the songs list, and the background of the media controls should blur the songs list behind it. It should only show when a song is playing. All the other controls shown are optional.
-- [X] For each subsequent song selected, do not play the song automatically.
-- [X] When a song is selected which is not playing, a Play button should be displayed, when a song is selected which is playing, a pause button should be displayed.
-- [X] When the play button is clicked, the song should start playing, if there was a song playing in the background, it should stop.
-- [X] When a song is being played, you must provide some indication in the list item that the song is being played.
-- [X] When a song is playing, you should be able to navigate away from it without the song stopping.
-- [X] When a new search is performed, you can leave any playing songs as
-is, or you can stop the playing song.
-- [X] Layout should be fixed to portrait
 
 ## Getting Started
 
